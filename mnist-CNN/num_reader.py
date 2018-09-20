@@ -36,7 +36,7 @@ print(val_loss, val_acc)
 # Save model
 # To read model use
 # new_model = tf.keras.models.load_model(MODEL_NAME)
-model.save('num_reader.model')
+model.save('num_reader-cnn.model')
 
 # Let's predict
 predictions = model.predict([x_test])
