@@ -8,7 +8,7 @@ import pickle
 DATADIR = "./PetImages"
 CATEGORIES = ["Dog", "Cat"]
 
-IMG_SIZE = 50  # Every image is normalized to IMG_SIZExIMG_SIZE
+IMG_SIZE = 70  # Every image is normalized to IMG_SIZExIMG_SIZE
 
 img_array = []
 training_data = []

@@ -36,7 +36,6 @@ for dense_layer in dense_layers:
             for _ in range(dense_layer):
                 model.add(Dense(layer_size))
                 model.add(Activation("relu"))
-                model.add(Dropout(0.2))
 
             model.add(Dense(1))  # Output layer
             model.add(Activation('sigmoid'))  # Activation for output layer
@@ -47,3 +46,4 @@ for dense_layer in dense_layers:
 
             model.fit(X, y, batch_size=32, epochs=10, validation_split=0.3, callbacks=[tensorboard])  # validation_split is percentage to be used to confirm
 
+            model.save("models/{}-conv-{}-nodes-{}-dense.model".format(conv_layer, layer_size, dense_layer))
