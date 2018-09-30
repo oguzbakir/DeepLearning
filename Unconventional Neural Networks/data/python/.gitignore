@@ -1,0 +1,4 @@
+*.npy
+*.pkl
+# Except this file
+!.gitignore
